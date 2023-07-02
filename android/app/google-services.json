@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "128550207851",
+    "project_id": "oneck-6a1da",
+    "storage_bucket": "oneck-6a1da.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128550207851:android:cd23bf63f391fee8a1cc2e",
+        "android_client_info": {
+          "package_name": "com.verf.stack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128550207851-02k039b2injsaqo1e5e9ormi5k4t4nh4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.verf.stack",
+            "certificate_hash": "01edd36460b49160656c63b1bebb676795461ea1"
+          }
+        },
+        {
+          "client_id": "128550207851-eq02irkdh9f6uliq5076a024ojo8bvae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcYy42z97MKl4KdWYeYahffSNcMp5lXL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128550207851-4lmbdjv0mko7bgttcu0dpg8tvj3k5qvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
