@@ -1,3 +1,4 @@
+import 'package:OneStack/pages/profpichange.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
@@ -254,7 +255,7 @@ class _intrpageState extends State<intrpage> {
   void initState() {
     getMe();
     getValidation().whenComplete(() {
-      PassToken != null
+      PassToken != null && widget.title != "addnew"
           ? Future.delayed(Duration.zero, () {
               Navigator.pushReplacement(
                   context,
@@ -387,50 +388,67 @@ class _intrpageState extends State<intrpage> {
                                 color: Colors.white),
                           ),
                           Container(height: 50),
-                          Container(
-                            width: 100,
-                            child: Center(
-                                child: Stack(children: [
-                              InkWell(
-                                onTap: () {},
-                                child: CircleAvatar(
-                                    radius: 50,
-                                    backgroundColor: Colors.grey,
-                                    child: Center(
-                                      child:Icon(Icons.person,color:Colors.blueGrey.shade900),
-                                    )),
-                              ),
-                              ...pic_url.map(
-                                (ui) => ui['username1'] ==
-                                        sky2["username"].toString()
-                                    ? Center(
-                                        //bottom:0,
-                                        child: InkWell(
-                                          onTap: () {},
-                                          child: CircleAvatar(
-                                            radius: 50,
-                                            backgroundColor: Colors.transparent,
-
-                                            backgroundImage: NetworkImage(
-                                              ui['image'],
-                                            ), //ui['image'],
+                          InkWell(
+                            
+                            child: Container(
+                              width: 100,
+                              child: Center(
+                                  child: Stack(children: [
+                                InkWell(
+                                  onTap: () {
+                              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => chang(
+                            
+                            username: sky2["username"].toString()
+                          )));
+                            },
+                                  child: CircleAvatar(
+                                      radius: 50,
+                                      backgroundColor: Colors.grey,
+                                      child: Center(
+                                        child:Icon(Icons.person,color:Colors.blueGrey.shade900),
+                                      )),
+                                ),
+                                ...pic_url.map(
+                                  (ui) => ui['username1'] ==
+                                          sky2["username"].toString()
+                                      ? Center(
+                                          //bottom:0,
+                                          child: InkWell(
+                                            onTap: () {Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => chang(
+                            
+                            username: sky2["username"].toString()
+                          )));},
+                                            child: CircleAvatar(
+                                              radius: 50,
+                                              backgroundColor: Colors.transparent,
+                          
+                                              backgroundImage: NetworkImage(
+                                                ui['image'],
+                                              ), //ui['image'],
+                                            ),
                                           ),
-                                        ),
-                                      )
-                                    : SizedBox(
-                                        //ui['image'],
-                                        ),
-                              ),
-                              Positioned(
-                                bottom: 2,
-                                right: 6,
-                                child: CircleAvatar(
-                                    backgroundColor: Colors.grey.shade900,
-                                    radius: 9,
-                                    child:
-                                        const Icon(Icons.camera_alt, size: 10)),
-                              )
-                            ])),
+                                        )
+                                      : SizedBox(
+                                          //ui['image'],
+                                          ),
+                                ),
+                                Positioned(
+                                  bottom: 2,
+                                  right: 6,
+                                  child: CircleAvatar(
+                                      backgroundColor: Colors.grey.shade900,
+                                      radius: 9,
+                                      child:
+                                          const Icon(Icons.camera_alt, size: 10)),
+                                )
+                              ])),
+                            ),
                           ),
                           Container(
                             height: 30,

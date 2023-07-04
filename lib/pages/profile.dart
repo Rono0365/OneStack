@@ -4,6 +4,7 @@ import 'package:OneStack/login.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:intl/intl.dart';
+import '../intro_pageview.dart';
 import '../legal.dart';
 import '../pages/events.dart';
 import '../widgets/bottomnav.dart';
@@ -616,7 +617,13 @@ class _profileState extends State<profile> {
                               ),
                             ]),
                             trailing: InkWell(
-                                onTap: () {},
+                                onTap: () {   Navigator.push( //intrpage
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) =>
+                                     intrpage(title: 'addnew',token: widget.token,userid: widget.userid.toString()) //screen(),
+                                  ), //MaterialPageRoute
+                            );},
                                 child: Icon(Icons.create, color: Colors.grey))),
                         Container(
                           padding: EdgeInsets.only(left: 15.0, bottom: 10.0),
@@ -780,7 +787,7 @@ class _profileState extends State<profile> {
                         ),
                         ListTile(
                           onTap: () {
-                            Navigator.push(
+                            Navigator.push( //intrpage
                               context,
                               MaterialPageRoute(
                                   builder: (context) =>

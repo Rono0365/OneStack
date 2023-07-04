@@ -328,7 +328,9 @@ class _Home1State extends State<Home1> {
                                   .where((x) =>
                                       x["username"].toString() ==
                                       widget.username.toString())
-                                  .toList()
+                                  .toList().reversed
+                                 .take(1)
+                                  
                                   .map((e) => Container(
                                           child: Row(children: [
                                         ...e['skills']
@@ -357,9 +359,9 @@ class _Home1State extends State<Home1> {
                   //Text(),
                   /* Text(information.where((x) =>
                           getLikesByUsername(sky2, widget.username.toString()).toString().replaceFirst("[", "").replaceFirst("]", "").replaceAll(" ", ""))),*/
-                  ...information.reversed.map((x) => //get the preffered topics
+                  ...information.toList().map((x) => //get the preffered topics
                           // == "IOT"
-                          getLikesByUsername(sky2, widget.username.toString())
+                          getLikesByUsername(sky2, widget.username.toString()).reversed.take(1)
                                   .toString()
                                   .replaceFirst("[", "")
                                   .replaceFirst("]", "")
