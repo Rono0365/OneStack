@@ -14,7 +14,7 @@ Welcome to OneStack, a social platform designed specifically for tech students i
 
 ## Introduction
 
-OneStack aims to create a vibrant and ronoive community for tech students in Kenya, providing a platform for knowledge sharing, collaboration, and networking. Whether you're studying programming, computer science, engineering, or any other tech-related field, OneStack is the place for you to connect with fellow students, ask questions, share insights, and learn from each other's experiences.
+OneStack aims to create a vibrant and supportive community for tech students in Kenya, providing a platform for knowledge sharing, collaboration, and networking. Whether you're studying programming, computer science, engineering, or any other tech-related field, OneStack is the place for you to connect with fellow students, ask questions, share insights, and learn from each other's experiences.
 
 ## Features
 
