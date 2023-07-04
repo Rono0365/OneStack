@@ -1,3 +1,5 @@
+![Untitled (17)](https://github.com/Rono0365/OneStack/assets/63807776/d6e59b1f-eeba-4e60-a2c0-c36f6ff07351)
+
 **README - OneStack: A Social Platform for Tech Students in Kenya**
 
 Welcome to OneStack, a social platform designed specifically for tech students in Kenya! This README file provides an overview of the platform, its features, and instructions on how to get started.
