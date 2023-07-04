@@ -8,7 +8,7 @@ Welcome to OneStack, a social platform designed specifically for tech students i
 - [Features](#features)
 - [Getting Started](#getting-started)
 - [Community Guidelines](#community-guidelines)
-- [rono and Feedback](#rono-and-feedback)
+- [support and Feedback](#support-and-feedback)
 
 ## Introduction
 
