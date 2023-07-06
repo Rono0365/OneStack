@@ -165,8 +165,8 @@ class _MyAppLState extends State<MyAppL> {
       },
       body: jsonEncode(<String, String>{
         'username': usernameg,
-        'password': "xcsdrono2022",
-        'password2': "xcsdrono2022",
+        'password': "**********",
+        'password2': "**********",
         'email': _emailg,
         'first_name': firstnameg,
         'last_name': lastnameg,
