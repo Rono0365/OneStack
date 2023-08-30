@@ -34,7 +34,7 @@ To join OneStack and start connecting with fellow tech students in Kenya, follow
 1. download the OneStack mobile app from this repo just go to tag.
 2. Click on the "Sign Up" button to create a new account. Provide the required information, such as your name and email address, .
 3. Read and accept the Terms and Conditions and Privacy Policy of OneStack on the app.
-4. Set up your profile by adding relevant details, such as your field of study, skills, and interests.
+4. Set up your profile by adding relevant details, such as your skills and interests.
 5. Start exploring the platform! Join discussions, contribute to conversations, share resources, and connect with other tech students in Kenya.
 
 ## Community Guidelines
